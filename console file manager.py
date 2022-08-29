@@ -2,6 +2,7 @@ import os
 import sys
 import shutil
 
+
 def separator(symbol, count):
     return symbol * count
 
@@ -76,13 +77,9 @@ while True:
         size_file = input('Введите путь к нужному файлу: ')
         print('Размер файла: ', os.stat(size_file).st_size)
     elif choice == '9':
-        start_file = input('Введите путь к файлу ВИКТОРИНЫ: ')
-        # запускал r'C:\Users\Alex\PycharmProjects\PS\Lesson3\victory.py'
-        os.startfile(f'{start_file}')
+        from Programms import victory
     elif choice == '10':
-        start_file = input('Введите путь к файлу БАНКИНГ: ')
-        # запускал r'C:\Users\Alex\PycharmProjects\PS\Lesson4\use_functions.py'
-        os.startfile(f'{start_file}')
+        from Programms import use_functions
     elif choice == '11':
         print ('Текущая папка: ', os.getcwd())
         new_path = input('Перейти в: ')
