@@ -1,10 +1,7 @@
 import os
 import sys
 import shutil
-
-
-def separator(symbol, count):
-    return symbol * count
+from Programms.use_functions import separator
 
 print(separator('*', 20))
 print("Меню: ")
