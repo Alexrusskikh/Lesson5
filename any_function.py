@@ -8,7 +8,6 @@ def filter_odd_num(in_num):
     else:
         return True  # если число четное...
 
-
 def even_odd(x):
     """
     вместо четного числа  возвращает 0, если нет - то аргумент
